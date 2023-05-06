@@ -1,0 +1,114 @@
+body{
+   background-color:aliceblue;
+}
+ 
+ .carousel{
+   margin:0 auto;
+   margin-top: 0px;
+   position: relative;
+ 
+  
+ 
+   max-width: 600px;
+   width: 600px;
+   
+ }
+
+ .carousel-logo{
+
+   max-width: 600px;
+   width: 600px;
+   margin:0 auto;
+   margin-top: 30px;
+ }
+ .carousel .carousel-item
+ {
+
+    display:none;
+   
+ }
+
+ .carousel .carousel-item-visible{
+
+    display:block;
+    animation: fadeVisibility 0.5s;
+    
+ }
+
+ .carousel .carousel-item img{
+
+    width:100%;
+    max-width:600px;
+   
+    height: auto;
+
+ }
+
+ .carousel .carousel-actions{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+ }
+.carousel .carousel-actions button{
+    border-radius:50px;
+    background-color:white;
+    border:none;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    width: 40px;
+    height:40px;
+
+}
+.carousel ul{
+   list-style: none;
+   position:absolute;
+   display: flex;
+   padding:0;
+   margin:0;
+   left:50%;
+   bottom: 10px;
+   transform: translate(-50%);
+
+}
+.carousel ul li {
+   width: 10px;
+   height: 10px;
+   background:red;
+   border: 2px solid red;
+   border-radius: 50px;
+   margin: 10px;
+   cursor: pointer;
+ }
+ .carousel ul li.selected {
+   background: transparent;
+ }
+
+
+.carousel .carousel-actions button#carousel-button-prev{
+
+    margin-left:10px;
+}
+.carousel .carousel-actions button#carousel-button-next{
+
+    margin-right:10px;
+}
+@keyframes fadeVisibility{
+
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+
+}
+
+
+
+
+
+ 
